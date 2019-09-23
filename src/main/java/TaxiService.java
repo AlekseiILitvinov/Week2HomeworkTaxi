@@ -7,7 +7,7 @@ public class TaxiService {
 
     public TaxiService() {
     }
-    
+
     public TaxiService(int boardingPrice, int pricePerKilometer, int discountThreshold, int discountPercent, int discountMax) {
         this.boardingPrice = boardingPrice;
         this.pricePerKilometer = pricePerKilometer;
