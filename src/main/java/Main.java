@@ -20,7 +20,8 @@ public class Main {
                 "discount %d. The total price to pay: %d";
         int price = service.calculateFarePrice(distance);
         int discount = service.calculateDiscount(price);
+        int total = service.totalPrice(distance);
         System.out.println(String.format(priceAnnouncementFormat, distance, serviceName,
-                price, discount, (price - discount)));
+                price, discount, total));
     }
 }

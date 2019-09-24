@@ -42,4 +42,9 @@ public class TaxiService {
         }
         return discount;
     }
+
+    public int totalPrice(double distance) {
+        int price = calculateFarePrice(distance);
+        return price - calculateDiscount(price);
+    }
 }
