@@ -43,6 +43,11 @@ public class TaxiService {
         return discount;
     }
 
+    /**
+     * The method totalPrice uses the other methods of the TaxiService to calculate the price with discount applied.
+     * @param distance Distance to travel in km
+     * @return Returns the total amount the passenger is supposed to pay. The discount is already subtracted.
+     */
     public int totalPrice(double distance) {
         int price = calculateFarePrice(distance);
         return price - calculateDiscount(price);
